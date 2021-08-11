@@ -1,3 +1,4 @@
+import 'package:cursos/screens/detail_course/components/video_curso.dart';
 import 'package:flutter/material.dart';
 import '../../../size_config.dart';
 import '../../../constants.dart';
@@ -196,7 +197,7 @@ class _DetailCourseState extends State<DetailCourse> {
                       DefaultButton(
             text: "Clase 1.1 - Bienvenida",
             press: () {
-        
+              Navigator.pushNamed(context, VideoCourse.routeName);
             },
           ),
                 ],

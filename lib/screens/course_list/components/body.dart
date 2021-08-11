@@ -1,3 +1,4 @@
+import 'package:cursos/screens/account/account_screen.dart';
 import 'package:cursos/screens/detail_course/detail_course.dart';
 import 'package:flutter/material.dart';
 import '../../../size_config.dart';
@@ -51,7 +52,6 @@ List _data = [
 ];
 
 class Course extends StatefulWidget {
-  //static String routeName = "/course_list";
   Course({Key key}) : super(key: key);
 
   @override
@@ -65,9 +65,10 @@ class _CourseState extends State<Course> {
       floatingActionButton: FloatingActionButton(
       heroTag: null,
       onPressed: () {
+           Navigator.pushNamed(context, AcountScreen.routeName);
       },
       backgroundColor: kPrimaryColor,
-      child: Icon(Icons.pan_tool),
+      child: Icon(Icons.perm_identity),
     ),
       appBar: AppBar(
         centerTitle: true,
